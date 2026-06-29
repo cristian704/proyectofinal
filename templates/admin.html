@@ -1,0 +1,13 @@
+<h1>ADMIN</h1>
+
+<form method="POST" action="/add">
+<input name="english" placeholder="inglés">
+<input name="spanish" placeholder="español">
+<button>Agregar</button>
+</form>
+
+<ul>
+{% for e in exercises %}
+  <li>{{ e.english }} - {{ e.spanish }}</li>
+{% endfor %}
+</ul>
